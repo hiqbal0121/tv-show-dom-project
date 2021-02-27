@@ -9,10 +9,28 @@
   </head>
 
   <body>
+    
+    <H1>TV Shows</H1>
+    
+    <nav id="nav-bar">
+      <select id="selectShow">
+        <option value="first">Select Show</option>
+      </select>
+      <select id="selectEpisode">
+        <option value="first">Select Episode</option>
+      </select>
+      <input type="text" id="search" placeholder="search">
+    </nav>
+    
     <div id="root">
     </div>
 
-    <H1>Test</H1>
+    <div id="footer">
+      <footer>
+        All show data taken from
+        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+      </footer>
+    </div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
