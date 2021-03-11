@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | Haroon Iqbal (hiqbal0121)</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    
-    <H1>TV Shows</H1>
-    
-    <nav id="nav-bar">
-      <select id="selectShow">
-        <option value="first">Select Show</option>
-      </select>
-      <select id="selectEpisode">
-        <option value="first">Select Episode</option>
-      </select>
-      <input type="text" id="search" placeholder="search">
-    </nav>
-    
-    <div id="root">
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Show Project | Haroon Iqbal (hiqbal0121)</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
 
-    <div id="footer">
-      <footer>
-        All show data taken from
-        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
-      </footer>
-    </div>
+<body id="main">
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+  <header>
+    <h1>TV Shows</h1>
+  </header>
 
-    <!-- Loads YOUR javascript code -->
-    <script src="script.js"></script>
-  </body>
+  <div id="navBar">
+
+    <a id="navAll" href="#">Home (All Shows)</a>
+    <br>
+
+    <select id="selShow">
+      <option value="first">Select Show</option>
+    </select>
+
+    <select id="selEpisode">
+      <option value="first">Select Episode</option>
+    </select>
+
+    <input type="text" id="searchEp" placeholder="Search Episodes" />
+    <input type="text" id="searchSh" placeholder="Search Shows" />
+    <br>
+
+    <span id="counter"></span>
+
+  </div>
+
+  <div id="mainContent"></div>
+
+  <footer id="footer">
+    All show data taken from
+    <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="shows.js"></script>
+  <script src="episodes.js"></script>
+
+</body>
+
 </html>
